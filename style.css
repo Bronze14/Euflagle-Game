@@ -1,0 +1,88 @@
+body{
+    background-color: #191722;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+#gameBoard{
+    background-color: #0E0F0F;
+    border: 3px solid;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 1265px;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border-color:#191722;
+    
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#imgF{
+    align-self: center;
+    border: 1px solid;
+    border-color: yellow;
+    
+}
+img{
+    object-fit: fill;
+    border: 3px solid;
+    border-color: black;
+
+}
+#subBtns{
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+   
+}
+#inputBtn{
+    margin-bottom: 10px;
+}
+#underSub{
+    margin-bottom: 10px;
+    display: inline-block; 
+
+
+    
+}
+.mystyle1{
+    display: flex;
+    padding: 0.25rem;
+    position: relative;
+    background-color: rgb(84, 80, 109);
+    border-radius: 3px;
+    grid-column: 3 / span 6;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+}   
+.mystyle2{
+    display: flex;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgb(84, 80, 109);
+    font-weight: 700;
+    line-height: 2.5em;
+    border-radius: 3px;
+    grid-column: 2 / span 1;
+    margin-right: 2px;
+    text-overflow: ellipsis;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+
+    
+}
+.mystyle3{
+    display: grid;
+    grid-template-columns: repeat(9, minmax(30px, 2.5rem));
+    margin: 0px 2px 2px;
+}
