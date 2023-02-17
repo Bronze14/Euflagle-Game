@@ -28,7 +28,9 @@ body{
     
 }
 img{
-    object-fit: fill;
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
     border: 3px solid;
     border-color: black;
 
