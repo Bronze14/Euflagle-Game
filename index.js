@@ -1,7 +1,7 @@
 import {imagesf} from './flags.js';
 
 
-console.log(imagesf)
+
 let images = imagesf;
 
 
@@ -11,7 +11,7 @@ document.querySelector("img").src = `${Object.keys(images)[randomNumber]}`
 
 var flag = `${Object.keys(images)[randomNumber]}`
 var value = `${Object.values(images)[randomNumber]}`
-console.log(value)
+
 
 var inputValue = ``;
 
@@ -23,7 +23,7 @@ function randomFlag(images){
     randomNumber = Math.floor(Math.random() * Object.keys(images).length)
     document.querySelector("img").src = `${Object.keys(images)[randomNumber]}`
     value = `${Object.values(images)[randomNumber]}`
-    console.log(value)
+    
     return value
 
 }
@@ -35,12 +35,12 @@ document.onkeydown=function(evt){
     {
         inputValue = document.querySelector("#inputBtn").value
         if(inputValue.toUpperCase()==value.toUpperCase()){ 
-            console.log(images)
+            
             addElement1(value)
             value = randomFlag(images)
         }
         else {
-            console.log("ZLE")
+            
             addElement2(inputValue) 
         }
         document.querySelector("#inputBtn").value = ""
@@ -50,12 +50,12 @@ document.onkeydown=function(evt){
 document.querySelector('#subBtn').addEventListener('click', function(){
     inputValue = document.querySelector("#inputBtn").value
     if(inputValue.toUpperCase()==value.toUpperCase()){ 
-        console.log(images)
+        
         addElement1(value)
         value = randomFlag(images)
     }
     else {
-        console.log("ZLE")
+        
         addElement2(inputValue) 
     }
     document.querySelector("#inputBtn").value = ""
